@@ -1,0 +1,48 @@
+---
+layout: default
+title: Timeline
+---
+
+<div id="vis"></div>
+
+<!-- <style type="text/css">
+	.vis-item.edu {
+		color: red;
+	}
+
+	.vis-item.honors {
+		color: yellow;
+	}
+
+</style> -->
+
+<script type="text/javascript">
+
+var about = {{ site.baseurl }}{% link about.html %};
+var projects = {{ site.baseurl }}{% link projects.html %};
+	
+var container = document.getElementById('vis');
+
+var items = new vis.DataSet([
+	{id: 1, content: 'BA in Biology, Smith College', start: '2014-09-01', end: '2018-05-20', className: 'edu'},
+
+	{id: 2, content: '<a href='+about+'>Goldwater Award</a>', start: '2017-03-20', className: 'honors'},
+	{id: 3, content: '<a href='+about+'>First Place Undergraduate Poster, NESDB</a>', start: '2016-04', className: 'honors'},
+	{id: 4, content: '<a href='+about+">Dean's List</a>", start: '2014-09', end: '2016-05', className: 'honors'},
+	{id: 5, content: '<a href='+about+'>STRIDE Scholar</a>', start: '2014-09', end: '2018-05', className: 'honors'},
+	{id: 6, content: '<a href='+about+'>Faculty Prize</a>', start: '2014-06', className: 'honors'},
+	{id: 7, content: '<a href='+about+'>National Merit Scholar</a>', start: '2014-03', className: 'honors'},
+
+	// '<a href='+projects+'></a>'
+	{id: 8, content: '<a href='+projects+'>Barresi Lab</a>', start: '2015-09', end: '2018-05', className: 'lab'},
+	{id: 9, content: '<a href='+projects+'>Keller Lab</a>', start: '2016-06', className: 'lab'},
+	{id: 10, content: '<a href='+projects+'>Sabbagh Lab</a>', start: '2015-06', className: 'lab'},
+	{id: 11, content: '<a href='+projects+'>Katz Lab</a>', start: '2014-09', end: '2015-05', className: 'lab'},
+	{id: 12, content: '<a href='+projects+'>Memorializing NSH</a>', start: '2014-09', end: '2015-05', className: 'lab'}
+]);
+
+var options = {};
+
+var timeline = new vis.Timeline(container,items,options);
+
+</script>
