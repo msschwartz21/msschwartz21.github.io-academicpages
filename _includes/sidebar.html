@@ -7,15 +7,18 @@
     <img src="/portrait.jpg" width="200px" id="logo" alt="Blog logo"/>
     {% endif %}
   </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <h2 class="h2">I'm <a class="h2" href="/">{{ site.data.theme.name }}</a>.</h2>
   <div id="bio">
     <p>I'm a senior at Smith College studying developmental biology.</p>
   </div>
 
   <ul id="blog-posts" class="posts">
-    {% for page in site.pages %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
+    <li>
+      <a href="{{ site.baseurl }}{% link index.html %}">About Me</a><br>
+      <a href="{{ site.baseurl }}{% link projects.html %}">Projects</a><br>
+      <a href="{{ site.baseurl }}{% link pubs.html %}">Publications</a><br>
+      <a href="{{ site.baseurl }}{% link about.html %}">Honors and Awards</a>
+    </li>
   </ul>
 
   <div id="social">
