@@ -115,3 +115,31 @@ tr,td {
 .vis-item.vis-range.lab, .vis-item.vis-box.lab {
 	background-color: green;
 }
+
+.box {
+	float: center;
+	width: 550px;
+	/*border: 2px solid green;*/
+	margin: 20px auto;
+	padding: 20px auto;
+	overflow: auto;
+	overflow-x: auto;
+	vertical-align: top;
+}
+
+p.labels {
+	float: center;
+	text-align: center;
+}
+
+span.at {
+	color: green;
+	/*float: center;*/
+	font-weight: bold;
+}
+
+span.gfap {
+	color: red;
+	/*float: center;*/
+	font-weight: bold;
+}
