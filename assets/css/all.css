@@ -20,8 +20,23 @@ p {
 	font-size: 20px;
 }
 
+a {
+	font-family: 'Palanquin', sans-serif;
+	font-size: 20px;
+}
+
+strong {
+	font-family: 'Palanquin', sans-serif;
+	font-size: 20px;
+}
+
 h1, h2 {
 	font-family: 'Oswald', sans-serif;
+}
+
+h2.h2, a.h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
 }
 
 .project {
@@ -52,6 +67,15 @@ h1, h2 {
 }
 
 .pwhat {
+	font-family: 'Palanquin', sans-serif;
+	font-size: 24px;
+	/*position: relative;*/
+	/*top: -10px;*/
+	/*width: 480px;*/
+	line-height: 120%;
+}
+
+a.pwhat {
 	font-family: 'Palanquin', sans-serif;
 	font-size: 24px;
 	/*position: relative;*/
@@ -141,5 +165,19 @@ span.at {
 span.gfap {
 	color: red;
 	/*float: center;*/
+	font-weight: bold;
+}
+
+.btn {
+	padding: 10px 45px;
+	font-size: 1.4em;
+	background-color: {{ site.data.theme.highlight_color }};
+	border: {{ site.data.theme.highlight_color }};
+	margin: 5px;
+	display: inline-block;
+}
+
+a.btn {
+	color: white;
 	font-weight: bold;
 }
