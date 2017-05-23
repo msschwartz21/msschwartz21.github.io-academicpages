@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Blog Posts
+title: About Me
 ---
 
-<div id="home">
-  <h2><i class="fa fa-bookmark"></i> Blog Posts</h2>
-  <ul id="blog-posts" class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="intro">
+	<h1>About Me</h1>
+	<p>Hello! I am a senior at Smith College in Northampton, MA, USA after growing up in Phoenix, Arizona. I am fascinated by exploring applications of computer science and image analysis to biological questions in order to introduce quantitative analysis to typically qualitative characterization of phenotypes. Currently, I am developing methods to analyze commissures, connections between the sides of the brain, in zebrafish. Our primary challenge is to align commissures to eliminate individual variability in shape between embryos without losing biologically meaninful variation. I hope to pursue graduate study in biological image analysis before continuing on to a career in academia as a professor. I have received excellent mentoring as an undergraduate and hope that I will be able to provide the same advising to my own students as a professor.</p>
+	<br>
+	<p>To learn more about my research interests, please see <a href="{{ site.baseurl }}{% link projects.html %}">Research Projects</a></p>
+	<br>
+	<p>To see a list of my publications and presentations, please click <a href="{{ site.baseurl }}{% link pubs.html %}">here</a>.</p>
 </div>
