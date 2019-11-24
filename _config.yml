@@ -168,19 +168,19 @@ kramdown:
   enable_coderay: false
 
 # Collections
-collections:
-  teaching:
-    output: false
-    permalink: /:collection/:path/
-  publications:
-    output: false
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: false
-    permalink: /:collection/:path/
+# collections:
+#   teaching:
+#     output: false
+#     permalink: /:collection/:path/
+#   publications:
+#     output: false
+#     permalink: /:collection/:path/
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+#   talks:
+#     output: false
+#     permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -221,14 +221,14 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
   # _talks
   - scope:
       path: ""
