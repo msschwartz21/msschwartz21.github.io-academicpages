@@ -9,7 +9,7 @@ author_profile: true
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %} -->
 
-# In preparation
+## In preparation
 
 Schnabl JM, Litz MJ, **Schwartz MS**, Barresi MJ et al. Cranial neural crest cell immigration is required for forebrain formation in zebrafish.
 
