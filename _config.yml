@@ -80,9 +80,9 @@ analytics:
 author:
   name: "Morgan Schwartz"
   avatar: "headshot.jpg"
-  bio: "PhD Student in the Van Valen Lab"
-  location: "Caltech"
-  employer: "http://www.vanvalen.caltech.edu/"
+  bio: "PhD Student in the Van Valen Lab at Caltech"
+  location: "Pasadena, CA"
+  employer:
   pubmed: #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar: #"http://yourfullgooglescholarurl.com"
   email:
